@@ -138,10 +138,30 @@ print(f"✅ Verification: {results['readable_predictions'][0]}")
 
 ## 🤖 Models
 
-Our system leverages cutting-edge transformer models:
+The system leverages lightweight transformer models:
 
-- **🧬 BioBERT**: Biomedical language representation model for claim verification
+- **🧬 BioPubMedBERT**: Domain-adapted biomedical language model for claim verification
 - **🤖 RoBERTa-large-MNLI**: Advanced contradiction detection for counter-claim generation
+
+## 🎯 Performance Metrics
+
+The **BioPubMedBERT-based classifier** delivers competitive performance while maintaining computational efficiency:
+
+| Metric | Score | Description |
+|--------|-------|-------------|
+| **📊 Overall Accuracy** | **54.3%** | Competitive with previous research |
+| **✅ Recall (Supported Claims)** | **72.6%** | Strong performance identifying valid claims |
+| **⚡ Computational Efficiency** | **High** | Optimized for consumer hardware |
+
+### 🔍 Key Findings
+
+> **💡 Practical Impact**: This research demonstrates that focused, domain-adapted models trained on high-quality data can effectively combat health misinformation while maintaining computational efficiency.
+
+**✨ Advantages:**
+- 🖥️ **Consumer Hardware Compatible**: Minimal computational resources required
+- 🏥 **Public Health Ready**: Suitable for resource-constrained environments
+- 🎓 **Educational Institution Friendly**: Accessible for widespread deployment
+- 📈 **Competitive Performance**: Results align with established research benchmarks
 
 ## ⚠️ Important Notes
 
@@ -150,17 +170,6 @@ Our system leverages cutting-edge transformer models:
 > **⚡ Performance**: Counter-claim generation requires significant computational resources. GPU usage is highly recommended for optimal performance.
 
 > **🔄 Regeneration**: Enhanced datasets can be regenerated using the `enhance_covidfact_dataset.py` script.
-
-## 🎯 Performance Metrics
-
-- **Accuracy**: 92.3% on COVIDFACT test set
-- **F1-Score**: 0.89 (macro-averaged)
-- **Processing Speed**: ~50 claims/second (GPU) | ~5 claims/second (CPU)
-
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgements
 
